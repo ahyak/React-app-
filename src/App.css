@@ -1,0 +1,50 @@
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+/*.list-box:hover {
+ box-shadow: 10px 10px 5px #888888;
+ transform: scale(1.1)
+}*/
+ul {
+  width: 70%;
+}
+.zoom {
+-webkit-transition: all 0.35s ease-in-out;
+-moz-transition: all 0.35s ease-in-out;
+transition: all 0.35s ease-in-out;
+cursor: -webkit-zoom-in;
+cursor: -moz-zoom-in;
+cursor: zoom-in;
+}
+
+.crop {
+ height: 300px;
+ width: 390px;
+ overflow: hidden;
+}
+.crop img {
+ height: auto;
+ width: 370px;
+ float:left
+}
+
+.zoom:active,
+.zoom:focus {
+/**adjust scale to desired size,
+add browser prefixes**/
+-ms-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+-o-transform: scale(1.5);
+transform: scale(1.5);
+position:relative;
+z-index:100;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
